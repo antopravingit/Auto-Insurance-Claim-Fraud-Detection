@@ -1,4 +1,4 @@
-# Indian Paper Curreny Prediction :india: 
+# Insurance Claim Fraud Detection 
 
 ## Table of Content
   * [Demo](#demo)
