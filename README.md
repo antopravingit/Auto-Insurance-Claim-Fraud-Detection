@@ -20,11 +20,7 @@
 ## Demo
 Link: [https://indian-currency-prediction.herokuapp.com](https://indian-currency-prediction.herokuapp.com/)
 
-<alt="GIF" src="https://github.com/antopravingit/Insurance-Claim-Fraud-Detection/blob/main/insurance-fraud.gif?raw=true" width="500" height="320" />
-
 ![Alt Text](https://github.com/antopravingit/Insurance-Claim-Fraud-Detection/blob/main/insurance-fraud.gif)
-
-
 
 [![]([https://i.imgur.com/5gj4USj.png]())]
 
