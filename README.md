@@ -18,7 +18,7 @@
 
 
 ## Demo
-Link: [https://indian-currency-prediction.herokuapp.com](https://indian-currency-prediction.herokuapp.com/)
+Link: [https://auto-insurance-fraud-detection.herokuapp.com/](https://auto-insurance-fraud-detection.herokuapp.com/)
 
 ![Alt Text](https://github.com/antopravingit/Insurance-Claim-Fraud-Detection/blob/main/insurance-fraud.gif)
 
