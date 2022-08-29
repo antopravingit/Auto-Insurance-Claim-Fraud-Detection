@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Insurance Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<style>
+    label, select {
+        width:200px;
+		    }
+</style>	
+</head>
+<body>
+
+<div>
+
+    <h1>Insurance Claim Fraud Predictor</h1>
+
+    <p>To Predict whether a customer could make a Fraud claims enter the information below and click Predict button </p>
+<fieldset>
+<table>
+		<form action="{{ url_for('predict')}}" method="POST">
+            <tr>
+                <td><label for="months_as_customer">Months as customer</label></td>
+                <td><input type="number" id="months_as_customer" name="months_as_customer" required=required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="text" id="age" name="age" required=required></td>
+            </tr>
+			<tr>
+			    <td><label for="policy_deductable">Policy Deductable</label></td>
+			    <td><select id="policy_deductable" name="policy_deductable">
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+	            </select></td>
+			</tr>
+			<tr>
+               <td><label for="umbrella_limit">Umbrella Limit</label>
+               <td><input type="number" id="umbrella_limit" name="umbrella_limit" required=required></td>
+            </tr>			
+			<tr>
+  <td><label for="insured_sex">Insured Sex</label></td>
+  <td><select id="insured_sex" name="insured_sex">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+	</select></td>
+	        </tr>
+			<tr>
+  <td><label for="insured_education_level">Insured Education Level</label></td>
+  <td><select id="insured_education_level" name="insured_education_level">
+    <option value="associate">Associate</option>
+    <option value="college">College</option>
+	<option value="high School">High School</option>
+	<option value="jd">JD</option>
+	<option value="masters">Masters</option>
+	<option value="md">MD</option>
+	<option value="phd">PhD</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="insured_occupation">Insured Occupation</label></td>
+  <td><select id="insured_occupation" name="insured_occupation">
+    <option value="adm-clerical">Admin Clerical</option>
+    <option value="armed-forces">Armed Forces</option>
+	<option value="craft-repair">Craft Repair</option>
+	<option value="exec-managerial">Executive Managerial</option>
+	<option value="farming-fishing">Farming/Fishing</option>
+	<option value="handlers-cleaners">Handlers /Cleaners</option>
+	<option value="machine-op-inspct">Machine /op-inspect</option>
+	<option value="other-service">Other Service</option>
+	<option value="priv-house-serv">Private House Service</option>
+	<option value="prof-specialty">Professional Speciality</option>
+	<option value="protective-serv">Protective Service</option>
+	<option value="sales">Sales</option>
+	<option value="tech-support">Tech support</option>
+	<option value="transport-moving">Transport/Moving</option>
+	</select></td>
+	</tr>
+  <tr>
+  <td><label for="incident_type">Incident Type</label></td>
+  <td><select id="incident_type" name="incident_type">
+    <option value="multi-vehicle Collision">Multi-vehicle Collision</option>
+    <option value="parked car">Parked Car</option>
+	<option value="single vehicle Collision">Single Vehicle Collision</option>
+	<option value="vehicle theft">Vehicle Theft</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="collision_type">Collission Type</label></td>
+  <td><select id="collision_type" name="collision_type">
+    <option value="front collision">Front Collision</option>
+    <option value="rear collision">Rear Collision</option>
+	<option value="side collision">Side Collision</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="incident_severity">Incident Severity</label></td>
+ <td><select id="incident_severity" name="incident_severity">
+    <option value="major damage">Major Damage</option>
+    <option value="minor damage">Minor Damage</option>
+	<option value="total loss">Total Loss</option>
+	<option value="trivial damage">Trivial Damage</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="authorities_contacted">Authorities Contacted</label></td>
+  <td><select id="authorities_contacted" name="authorities_contacted">
+    <option value="ambulance">Ambulance</option>
+    <option value="fire">Fire</option>
+	<option value="none">None_</option>
+	<option value="other">Other</option>
+	<option value="police">Police</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="incident_hour_of_the_day">Incident Hour of the day</label></td>
+  <td><select id="incident_hour_of_the_day" name="incident_hour_of_the_day">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="number_of_vehicles_involved">Number of vehicles involved</label></td>
+  <td><select id="number_of_vehicles_involved" name="number_of_vehicles_involved">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="property_damage">Property Damage</label></td>
+  <td><select id="property_damage" name="property_damage">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="bodily_injuries">Bodily Injuries</label></td>
+  <td><select id="bodily_injuries" name="bodily_injuries">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="witnesses">Witnesses</label></td>
+  <td><select id="witnesses" name="witnesses">
+    <option value="0">0</option>
+    <option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="police_report_available">Police Report Available</label></td>
+  <td><select id="police_report_available" name="police_report_available">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+	</select></td>
+	</tr>
+	<tr>
+  <td><label for="total_claim_amount">Total Claim Amount</label></td>
+  <td><input type="number" id="total_claim_amount" name="total_claim_amount" required=required><br></td>
+  </tr>
+  </table>
+ <div style="text-align:center">  
+ <button type="Submit" class= "btn btn-primarty btn-block btn-large" style="height:20px; width:100px">PREDICT</button></br> 
+ 
+</form>
+    <b>
+    <i>
+   <br>
+   </br>
+   <p style="color:MediumSeaGreen;">
+   {{prediction_text}}
+    </b>
+    </i>   
+   </div> 
+</fieldset>
+</div>
+
+</body>
+</html>
