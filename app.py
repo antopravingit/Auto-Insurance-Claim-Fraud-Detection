@@ -5,7 +5,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open("dtc.pkl", "rb"))
+model = pickle.load(open("ada.pkl", "rb"))
 
 @app.route('/')
 def home():
