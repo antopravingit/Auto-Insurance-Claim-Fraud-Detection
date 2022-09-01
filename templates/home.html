@@ -3,21 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Insurance Fraud Detection</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Auto Insurance Fraud Detection</title>
+	 <!-- css -->
+    <!--link rel="stylesheet" href="static/styles.css"-->
+ </head>  
 <style>
-    label, select {
-        width:200px;
-		    }
+	input,
+        select {
+            width: 200px;
+            height: 25px;
+            margin: 2px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+          
+        body {
+            background-color: #e1f4f3;
+        }
 </style>	
-</head>
+
 <body>
 
 <div>
 
-    <h1>Insurance Claim Fraud Predictor</h1>
+    <h1><center>Auto Insurance Claim Fraud Predictor</center></h1>
 
-    <p>To Predict whether a customer could make a Fraud claims enter the information below and click Predict button </p>
+    <p><h2>Claim Details</h2></p>
 <fieldset>
 <table>
 		<form action="{{ url_for('predict')}}" method="POST">
@@ -198,7 +210,7 @@
     <i>
    <br>
    </br>
-   <p style="color:MediumSeaGreen;">
+   <p style="color:black;">
    {{prediction_text}}
     </b>
     </i>   
