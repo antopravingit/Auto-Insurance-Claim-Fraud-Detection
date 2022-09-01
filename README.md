@@ -38,10 +38,7 @@ This project is divided into two part:
  
 
 ## Installation
-The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
-```bash
-pip install -r requirements.txt
-```
+The Code is written in Python 3.9. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. T
 
 ## Run
 > STEP 1
@@ -107,7 +104,7 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 ## Bug / Feature Request
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/rowhitswami/Indian-Currency-Prediction/issues/new) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/rowhitswami/Indian-Currency-Prediction/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/antopravingit/Auto-Insurance-Claim-Fraud-Detection/issues). Please include sample queries and their corresponding results.
 
 ## Technologies Used
 
