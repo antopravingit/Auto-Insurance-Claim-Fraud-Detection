@@ -23,20 +23,19 @@ Link: [https://auto-insurance-fraud-detection.herokuapp.com/](https://auto-insur
 ![Alt Text](https://github.com/antopravingit/Insurance-Claim-Fraud-Detection/blob/main/insurance-fraud.gif)
 
 ## Overview
-The goal of this project is to build a model that can detect auto insurance fraud. The challenge behind fraud detection in machine learning is that frauds are far less common as compared to legit insurance claims. This type of problems is known as imbalanced class classification.Frauds are unethical and are losses to the company. By building a model that can classify auto insurance fraud, I am able to cut losses for the insurance company. Less losses equates to more earning.
+The goal of this project is to build a model that can detect Auto insurance claim fraud. The challenge behind fraud detection in machine learning is that frauds are far less common as compared to legit insurance claims. This type of problems is known as imbalanced class classification.Frauds are unethical and are losses to the company. By building a model that can classify auto insurance fraud, I am able to cut losses for the insurance company. Less losses equates to more earning.
 
 ## Motivation
-What could be a perfect way to utilize unfortunate lockdown period? Like most of you, I spend my time in cooking, Netflix, coding and reading some latest research papers on weekends. The idea of classifying indian currency struck to me when I was browsing through some research papers. I couldn't find any relevant research paper (and of course dataset!) associated with it. And that led me to collect the images of Indian currency to train a deep learning model using [this](https://github.com/hardikvasa/google-images-download) amazing tool.
+I learned a lot from Kaggle,Github,Youtube,Medium and many other community. Thanks to all the people who took time to post all their learnings to help others. I felt it is my time to give it back.
 
 ## Technical Aspect
 This project is divided into two part:
-1. Training a deep learning model using Keras. (_Not covered in this repo. I'll update the link here once I make it public._)
-2. Building and hosting a Flask web app on Heroku.
-    - A user can choose image from a device or capture it using a pre-built camera.
-    - Used __Amazon S3 Bucket__ to store the uploaded image and predictions.
-    - Used __CSRF Token__ to protect against CSRF attacks.
-    - Used __Sentry__ to catch the exception on the back-end.
-    - After uploading the image, the predictions are displayed on a __Bar Chart__.
+ 1. Exploratory Data Analysis
+ 2. Due to the imbalanced dataset, SMOTENC is used before trainig the model
+ 3. Training with 8 different Machine learning models, compare the results. Choose the best model
+ 4. Deploy the ML model to Heroku using FLASK
+
+ 
 
 ## Installation
 The Code is written in Python 3.7. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
