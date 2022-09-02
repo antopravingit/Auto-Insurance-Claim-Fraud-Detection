@@ -6,7 +6,7 @@
   * [Motivation](#motivation)
   * [Technical Aspect](#technical-aspect)
   * [Installation](#installation)
-  * [Deployement on Heroku](#deployement-on-heroku)
+  * [Deployment on Heroku](#deployment-on-heroku)
   * [Directory Tree](#directory-tree)
   * [Technologies Used](#technologies-used)
   * [Bug / Feature Request](#bug---feature-request)
@@ -19,7 +19,7 @@ Link: [https://auto-insurance-fraud-detection.herokuapp.com/](https://auto-insur
 ![Alt Text](https://github.com/antopravingit/Insurance-Claim-Fraud-Detection/blob/main/insurance-fraud.gif)
 
 ## Overview
-The goal of this project is to build a model that can detect Auto insurance claim fraud. The challenge behind fraud detection in machine learning is that frauds are far less common as compared to legit insurance claims. This type of problems is known as imbalanced class classification.Frauds are unethical and are losses to the company. By building a model that can classify auto insurance fraud, I am able to cut losses for the insurance company. Less losses equates to more earning.
+The goal of this project is to build a model that can detect Auto insurance claim fraud. The challenge behind fraud detection in machine learning is that frauds are far less common as compared to legit insurance claims. This type of problems is known as imbalanced class classification. Frauds are unethical and are losses to the company. By building a model that can classify auto insurance fraud, I am able to cut losses for the insurance company. Less losses equates to more earning.
 
 ## Motivation
 I learned a lot from Kaggle,Github,Youtube,Medium and many other community. Thanks to all the people who took time to post all their learnings to help others. I felt it is my time to give it back.
@@ -27,7 +27,7 @@ I learned a lot from Kaggle,Github,Youtube,Medium and many other community. Than
 ## Technical Aspect
 This project is divided into two part:
  1. Exploratory Data Analysis
- 2. Due to the imbalanced dataset, SMOTENC is used before trainig the model
+ 2. Due to the imbalanced dataset, SMOTENC is used before training the model
  3. Training with 8 different Machine learning models, compare the results. Choose the best model
  4. Deploy the ML model to Heroku using FLASK
 
@@ -36,7 +36,7 @@ The Code is written in Python 3.9. If you don't have Python installed you can fi
 ```bash
 pip install -r requirements.txt
 ```
-## Deployement on Heroku
+## Deployment on Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
 [![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
