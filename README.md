@@ -74,4 +74,4 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/antopravingit/Auto-Insurance-Claim-Fraud-Detection/issues). Please include sample queries and their corresponding results.
 
 ## Credits
-- [Insurance fraud dataset Download](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data) - This project wouldn't have been possible without this adta from Kaggle.
+- [Insurance fraud dataset Download](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data) - This project wouldn't have been possible without this data from Kaggle.
