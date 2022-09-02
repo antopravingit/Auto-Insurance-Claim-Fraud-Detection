@@ -51,15 +51,14 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 
 ## Directory Tree 
 ```
-├── static 
-│   ├── css
 ├── template
 │   ├── home.html
+├── Fraud_detection_model.ipynb
 ├── Procfile
 ├── README.md
+├── ada.pkl
 ├── app.py
-├── flight_price.ipynb
-├── flight_rf.pkl
+├── insurance fraud claims.csv
 ├── requirements.txt
 ```
 
